@@ -1,6 +1,7 @@
-# Project Title
+# Money Payments Aggregator to reduce small sum fees
 
-One Paragraph of project description goes here
+A prototype system in which a group of buyers and sellers create a "pool" to save on credit/debit card transaction fees (the fixed part), thus making micro (sub-dollar) transactions feasible.
+
 
 ## Getting Started
 
