@@ -1,0 +1,4 @@
+﻿  ConsoleApplication1.cpp
+c:\users\pccad\onedrive\documenti\money\consoleapplication1\consoleapplication1\consoleapplication1.cpp(9): warning C4244: 'inizializzazione': conversione da 'float' a 'int'. Possibile perdita di dati.
+  ConsoleApplication1.vcxproj -> C:\Users\pccad\OneDrive\Documenti\Money\ConsoleApplication1\Debug\ConsoleApplication1.exe
+  ConsoleApplication1.vcxproj -> C:\Users\pccad\OneDrive\Documenti\Money\ConsoleApplication1\Debug\ConsoleApplication1.pdb (Partial PDB)
