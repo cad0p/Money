@@ -5,67 +5,53 @@ A prototype system in which a group of buyers and sellers create a "pool" to sav
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+This project is written in C++, so it works in all major OSes.
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
+Just use gcc to compile after cloning this repo
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
+There are many variables to customize the results
 
 ```
-Give the example
+static const int N_b = 100; //Number of buyers
+static const int N_s = 10;  // Number of sellers
+static const int N_t = 5000;  // Number of transactions a day
+static const int DAYS = INFINITY; // Number of days
+static const int BUFFER = 80; // Buffer for every transaction
+static const int from = 0;
+static const int to = 10;
+
+static const double FIXED = 0.1;    // Fixed cost in real money per transaction
+static const double VARIABLE = 0.02; // Variable cost of transaction (in percentage)
 ```
 
-And repeat
+
+An example of the result:
 
 ```
-until finished
+vTransactions: 			2049
+Transactions: 			79
+Total amount: 			10001.2
+Total real amount: 		6582.84
+Advantage over system: 	96.1445%
+Bank balance: 			139.557
+Interest rate: 			0.0212001
+max spent: 				167.94
 ```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [Sublime Text](https://www.sublimetext.com/) - The text editor used
+* [Visual Studio](https://visualstudio.microsoft.com/) - To develop initially
+* [GitHub Desktop](https://desktop.github.com/) - To manage developement
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+The following is a copy of PurpleBooth
+> Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Versioning
 
