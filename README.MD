@@ -55,13 +55,13 @@ The following is a copy of PurpleBooth
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/cad0p/Money/tags). 
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Pier Carlo Cadoppi** - *Initial work*
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/cad0p/Money/contributors) who participated in this project.
 
 ## License
 
@@ -70,5 +70,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Acknowledgments
 
 * Hat tip to anyone whose code was used
+*  * **Billie Thompson** - *README Template* - [PurpleBooth](https://github.com/PurpleBooth)
 * Inspiration
-* etc
+* etc lol
