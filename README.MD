@@ -1,3 +1,5 @@
+Have you ever asked yourself why can't you pay for your usual morning coffee with a credit card? Credit card payments usually have variable and fixed transaction costs, which means that the merchant has to pay a bigger percentage the smaller the transaction is. This project is meant to solve the problem by basically doing payments virtually until a certain sum is reached (to have fewer transactions - hence fewer fixed transaction fees!).
+
 # Money Payments Aggregator to reduce small sum fees
 
 A prototype system in which a group of buyers and sellers create a "pool" to save on credit/debit card transaction fees (the fixed part), thus making micro (sub-dollar) transactions feasible.
