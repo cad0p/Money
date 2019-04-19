@@ -1,0 +1,24 @@
+Aggregazione dei pagamenti, un modo per rendere sostenibili le piccole transazioni.
+
+Almeno in Italia, per effettuare pagamenti di entità minore a 10 euro sfido chiunque a provare a usare la carta avendo successo. Tutti i venditori si lamentano delle commissioni che rendono insostenibile pagamenti sotto una certa soglia.
+
+Una transazione compratore - venditore ha due tipi di commissioni, tutte e due però a carico del venditore: fissa e variabile. Possiamo approssimare ottimisticamente la commissione fissa a 0,1 € per transazione, mentre la commissione percentuale sull’importo transato del 2%. Nella realtà le commissioni sono molto poco chiare e dipendono molto da quanto volume di denaro un negozio sposta. In sostanza i negozi piccoli pagano probabilmente percentuali peggiori di aziende molto grandi.
+
+Quale possibile soluzione? Oltre a implorare le banche di eliminare le commissioni bancarie sotto una certa soglia, ovviamente. Tra l’altro andrebbe anche a vantaggio loro, perché il volume di transazioni effettuate con la carta aumenterebbe non di poco.
+Un modo per convincerli? Provare a creare un servizio che raggruppi le transazioni, per ridurre al minimo i costi fissi. 
+Con transazioni casuali da 1 a 10 euro, allo stato attuale le commissioni fisse avrebbero lo stesso peso di quelle variabili, avendo come risultato finale un raddoppio delle commissioni sull’importo totale, passando dal 2 al 4%!
+Se tutte le transazioni fossero da un euro, la parte fissa rappresenterebbe addirittura il 10%, portando il totale al 12% di commissioni, ovvero al commerciante rimarrebbe soltanto l’88% degli incassi. 
+
+Come si articola questo servizio? 
+Quando viene effettuata una transazione, la transazione non avviene sul momento. Avviene una transazione di tipo virtuale nel sistema. Successivamente il compratore si recherà in un altro negozio, sicuramente, per effettuare un altro piccolo pagamento. Si pensi per esempio a cose come prendere un panino a pranzo, o a comprare il giornale in edicola, o anche prendere un caffè. Quando avrà raggiunto la cifra richiesta dal venditore, se il venditore nel frattempo avrà ricevuto altrettanti soldi da questi micropagamenti virtuali effettuati da altri compratori, allora la transazione avverrà tra il primo compratore (se è stato il più veloce tra i compratori a raggiungere quella cifra) e il venditore. Con questo sistema è stato testato che si potrebbe dimezzare il numero delle transazioni (e quindi dimezzare il costo fisso) effettuate per parità di volume di soldi trasferiti (esempio 770 transazioni invece che 1800 per un volume di 10000 euro su pagamenti da 1 a 10 euro) anche solo mettendo il buffer, ovvero la quantità di trasferimento minima richiesta dal venditore, a 10 €.
+
+Bello, potrebbe funzionare! Ma come portare tutta quella gente in questo servizio?
+Ci sarebbero diversi modi per svilupparlo, ma il più avvincente sarebbe più probabilmente quello di più facile e veloce adozione, ovvero quello che richiede meno passaggi possibili per funzionare.
+Il metodo che richiede meno passaggi funzionerebbe in questo modo:
+Il negoziante ha aderito al servizio semplicemente collegando il POS al sistema, che potrebbe funzionare sul computer di cassa o anche sul telefonino (spesso i POS sono controllabili in remoto). A questo punto metterà un adesivo per promuovere che nel suo negozio si potrà pagare con la carta anche per importi minori di 10 euro.
+Il cliente entra, e, informato del fatto, paga con la carta normalmente. Ora entra in gioco il controllo del POS: il pagamento viene sospeso, un po’ come si fa quando si inserisce la carta al distributore di benzina prima di fare il pieno, oppure quando si dà la carta (all’estero) al ristorante prima di dare la mancia, o ancora quando si compra qualcosa su Amazon (non viene addebitato subito l’importo), o sempre su Amazon quando si prenota un articolo non ancora disponibile.
+La transazione viene registrata nel sistema come una transazione virtuale (quindi in attesa di essere eseguita), e in essa vengono memorizzati i dati del compratore e del venditore.
+Non appena le condizioni per effettuare il pagamento dell’importo minimo deciso dal venditore risultano favorevoli, allora una transazione vera e propria viene eseguita, e l’importo della transazione viene detratto dalla situazione del compratore e del venditore.
+
+Questa sarebbe un’occasione per implementare anche la ricevuta elettronica!
+Il compratore sarebbe incentivato successivamente a scaricare l’applicazione, in cui potrà vedere lo storico dei suoi acquisti ed avere una copia della ricevuta, sempre presente e soprattutto che non sbiadisce, risolvendo un altro grosso problema delle transazioni di oggi. Ovviamente se preferisce, il compratore successivamente potrà utilizzare l’app per pagare, utilizzando però un pagamento di tipo online, non fisicamente col POS del negozio.
