@@ -3,6 +3,7 @@
 
 #include "stdafx.h"
 
+
 static const int N_b = 100; //Number of buyers
 static const int N_s = 10;  // Number of sellers
 static const int N_t = 5000;  // Number of transactions a day
