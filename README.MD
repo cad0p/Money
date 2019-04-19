@@ -8,6 +8,7 @@ A prototype system in which a group of buyers and sellers create a "pool" to sav
 This project is written in C++, so it works in all major OSes.
 
 A few details on the reasoning on why I made this are on [WHY.MD](WHY.MD)
+
 Keep in mind its Google Translated for now, the Italian version is here: [WHY_IT.MD](WHY_IT.MD)
 
 ### Prerequisites
