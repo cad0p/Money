@@ -32,14 +32,14 @@ static const double VARIABLE = 0.02; // Variable cost of transaction (in percent
 An example of the result:
 
 ```
-vTransactions: 			2049
-Transactions: 			79
-Total amount: 			10001.2
-Total real amount: 		6582.84
+vTransactions: 	2049
+Transactions: 	79
+Total amount: 	10001.2
+Total real amount: 	6582.84
 Advantage over system: 	96.1445%
-Bank balance: 			139.557
-Interest rate: 			0.0212001
-max spent: 				167.94
+Bank balance: 	139.557
+Interest rate: 	0.0212001
+max spent: 	167.94
 ```
 
 ## Built With
