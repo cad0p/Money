@@ -92,7 +92,7 @@ public:
 	bool is_inlist() { return inlist; }
 	CreditCard& get_cc() { return c; }
 };
-// used to order the priority list to be payed
+// used to order the priority list to be paid
 bool operator<(Seller s1, Seller s2) { return s1.get_cc().get_in() > s2.get_cc().get_in();
 }
 ostream& operator<<(ostream& os, Seller b) { return os << b.get_id() << endl; }
